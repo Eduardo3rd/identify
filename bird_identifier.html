@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bird Identifier</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.7.4"></script>
+  <script src="imagenet_classes.js"></script>
+  <script src="bird_identifier.js" async onload="initialize()"></script>
+  <style>
+	body {
+	  font-family: Arial, sans-serif;
+	  text-align: center;
+	  max-width: 800px;
+	  margin: 0 auto;
+	}
+	img {
+	  max-width: 100%;
+	  height: auto;
+	}
+  </style>
+</head>
+<body>
+  <!-- Wrap the <h1> tag in an <a> tag with the specified href attribute -->
+  <a href="https://xkcd.com/1425/" style="text-decoration: none; color: inherit;"><h1>Bird Identifier</h1></a>
+  <p>Upload a photo to identify any birds in the image.</p>
+  <input type="file" id="image-upload" accept="image/*">
+  <div id="image-container"></div>
+  <div id="results"></div>
+</body>
+</html>
